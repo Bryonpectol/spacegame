@@ -12,7 +12,7 @@ function Generate() {
 
     let RanSize = Math.floor(Math.random() * 60000);
 
-    let RanAlienNum = Math.floor(Math.random() * 10);
+    let RanAlienNum = Math.floor(Math.random() * 9);
 
     let RanAgeNum = Math.floor(Math.random() * 13);
 
