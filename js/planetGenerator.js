@@ -14,11 +14,14 @@ function Generate() {
 
     let RanAlienNum = Math.floor(Math.random() * 10);
 
+    let RanAgeNum = Math.floor(Math.random() * 13);
+
 
     let PlanetNameP = document.getElementById("PlanetNameP");
     let PlanetTypeP = document.getElementById("PlanetTypeP");
     let PlanetSizeP = document.getElementById("PlanetSizeP");
     let PlanetImage = document.getElementById("PlanetImage");
+    let PlanetAge = document.getElementById("PlanetAge");
     let SpeciesAmount = document.getElementById("SpeciesAmount");
 
     PlanetImage.className = "PlanetImg";
@@ -28,7 +31,7 @@ function Generate() {
     PlanetTypeP.textContent = "Planet Type: " + PlanetType[RanType];
     PlanetSizeP.textContent = "Planet Size: " + RanSize + " Miles in Diameter";
     SpeciesAmount.textContent = "Amount of Intelligent Life forms on the Planet: " + RanAlienNum;
-
+    PlanetAge.textContent = "Estimated Age of Planet: " + RanAgeNum;
 
 
     console.log(RanName);
