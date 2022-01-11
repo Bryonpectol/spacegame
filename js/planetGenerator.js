@@ -1,7 +1,9 @@
-const PlanetName = ["Arnuu","Agit B-II","Anehim","Jeq Abdo"];
-const PlanetType = ["Desert","Water","Lava","Paradise","Rock","snow"];
+const PlanetName = ["Arnuu","Agit B-II","Anehim","Jeq Abdo","HistenBurg","Ven 8","Paige"];
+const PlanetType = ["Desert","Water","Lava","Paradise","Rock","Snow"];
+const PlanetImg = ["/images/DesertPlanet.png","/images/WaterPlanet.png","/images/LavaPlanet.png","/images/ParadisePlanet.png","/images/RockPlanet.png","/images/SnowPlanet.png"];
 
 function Generate() {
+
     let Container = document.getElementById("container");
 
     let RanName = Math.floor(Math.random() * PlanetName.length);
@@ -10,19 +12,26 @@ function Generate() {
 
     let RanSize = Math.floor(Math.random() * 90000);
 
+    let RanAlienNum = Math.floor(Math.random() * 10);
 
-    let PlanetNameP = document.createElement("p");
-    let PlanetTypeP = document.createElement("p");
-    let PlanetSizeP = document.createElement("p");
+
+    let PlanetNameP = document.getElementById("PlanetNameP");
+    let PlanetTypeP = document.getElementById("PlanetTypeP");
+    let PlanetSizeP = document.getElementById("PlanetSizeP");
+    let PlanetImage = document.getElementById("PlanetImage");
+    let SpeciesAmount = document.getElementById("SpeciesAmount");
+
+    PlanetImage.className = "PlanetImg";
 
     PlanetNameP.textContent = "Planet Name: " + PlanetName[RanName];
+    PlanetImage.setAttribute("src",PlanetImg[RanType]);
     PlanetTypeP.textContent = "Planet Type: " + PlanetType[RanType];
     PlanetSizeP.textContent = "Planet Size: " + RanSize + " Miles in Diameter";
+    SpeciesAmount.textContent = "Amount of Intelligent Life forms on the Planet: " + RanAlienNum;
 
 
-    Container.appendChild(PlanetNameP);
-    Container.appendChild(PlanetTypeP);
-    Container.appendChild(PlanetSizeP);
 
     console.log(RanName);
+
+    
 }
