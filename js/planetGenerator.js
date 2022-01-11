@@ -1,5 +1,5 @@
 const PlanetName = ["Arnuu","Agit B-II","Anehim","Jeq Abdo","HistenBurg","Ven 8","Paige","Veeo Dos","Sugargate","Palthar","Mietos V-4","Unknown Planet 136","Li Xiao Ming","Fes","Scoviergn Major","Scoviergn Minor","Qeptoid B","Rinniere","Unknown Planet 26","Demin","Byron","Outlier 5","Cosmopolis","Nedel","New Histenburg"];
-const PlanetType = ["Desert","Water","Lava","Paradise","Rock","Snow","Astroid"];
+const PlanetType = ["Desert","Water","Lava","Paradise","Rock","Snow"];
 const PlanetImg = ["/images/DesertPlanet.png","/images/WaterPlanet.png","/images/LavaPlanet.png","/images/ParadisePlanet.png","/images/RockPlanet.png","/images/SnowPlanet.png"];
 
 function Generate() {
