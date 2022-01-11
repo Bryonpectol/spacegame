@@ -31,7 +31,7 @@ function Generate() {
     PlanetTypeP.textContent = "Planet Type: " + PlanetType[RanType];
     PlanetSizeP.textContent = "Planet Size: " + RanSize + " Miles in Diameter";
     SpeciesAmount.textContent = "Amount of Intelligent Life forms on the Planet: " + RanAlienNum;
-    PlanetAge.textContent = "Estimated Age of Planet: " + RanAgeNum;
+    PlanetAge.textContent = "Estimated Age of Planet: " + RanAgeNum + " billion years old";
 
 
     console.log(RanName);
