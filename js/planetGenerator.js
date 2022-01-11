@@ -10,7 +10,7 @@ function Generate() {
 
     let RanType = Math.floor(Math.random() * PlanetType.length);
 
-    let RanSize = Math.floor(Math.random() * 90000);
+    let RanSize = Math.floor(Math.random() * 60000);
 
     let RanAlienNum = Math.floor(Math.random() * 10);
 
